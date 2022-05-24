@@ -2,24 +2,25 @@ import "./styles/header.scss";
 import Fire from "./icons/fire";
 import Random from "./icons/random";
 import Search from "./icons/search";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <div className="header-container">
-        <a href="/" className="header-container--logo">
+        <NavLink to="/" className="header-container--logo">
           Giffer
-        </a>
+        </NavLink>
         <nav>
-          <a href="/">
+          <NavLink to="/trending">
             <Fire />
-          </a>
-          <a href="/">
+          </NavLink>
+          <NavLink to="/random">
             <Random />
-          </a>
-          <a href="/">
+          </NavLink>
+          <NavLink to="/search">
             <Search />
-          </a>
+          </NavLink>
         </nav>
       </div>
     </header>

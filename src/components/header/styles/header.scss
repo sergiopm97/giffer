@@ -21,11 +21,23 @@ nav {
     list-style-type: none;
   }
 
+  .active {
+    svg {
+      stroke: $red;
+    }
+  }
+
   @include responsive(mobile-large) {
     border-radius: 2rem;
     padding: 2vw 5vw 1vw 5vw;
     background-color: $red;
     gap: 10vw;
+
+    .active {
+      svg {
+        stroke: $black;
+      }
+    }
   }
 }
 
