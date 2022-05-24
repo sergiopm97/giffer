@@ -4,9 +4,12 @@
 header {
   width: 100%;
   display: flex;
+  position: sticky;
+  background-color: $black;
   justify-content: center;
   align-items: center;
   height: 8.5rem;
+  top: 0;
 
   @include responsive(mobile-large) {
     height: 65vw;
