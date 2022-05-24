@@ -10,6 +10,7 @@ header {
 
   @include responsive(mobile-large) {
     height: 65vw;
+    background-color: $dark-black;
   }
 }
 
@@ -63,7 +64,7 @@ nav {
     }
   }
 
-  &__nav-icon {
+  &--nav-icon {
     height: 2.5rem;
     cursor: pointer;
     transition: stroke 0.5s ease;

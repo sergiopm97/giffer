@@ -1,6 +1,6 @@
 function Fire() {
   return (
-    <svg className="header-container__nav-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <svg className="header-container--nav-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
