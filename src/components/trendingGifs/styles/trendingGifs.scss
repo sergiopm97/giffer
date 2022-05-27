@@ -1,0 +1,39 @@
+@import "../../../scss/variables";
+@import "../../../scss/responsive";
+
+.trending-container {
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+
+  &__content {
+    width: 80%;
+    max-width: $portatil-large;
+
+    &--title {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      font-weight: 700;
+
+      @include responsive(mobile-large) {
+        font-size: 12vw;
+        margin-bottom: 10vw;
+      }
+    }
+
+    &__gifs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @include responsive(mobile-large) {
+      width: 90%;
+    }
+  }
+  @include responsive(mobile-large) {
+    margin-top: 10vw;
+  }
+}

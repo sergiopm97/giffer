@@ -9,6 +9,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 8.5rem;
+  z-index: 999;
   top: 0;
 
   @include responsive(mobile-large) {

@@ -1,0 +1,48 @@
+@import "../../../scss/variables";
+@import "../../../scss/responsive";
+
+.gif-container {
+  width: 20rem;
+  padding: 0.5rem;
+  position: relative;
+  background-color: $dark-black;
+  flex-direction: column;
+  display: flex;
+
+  &__heart-icon {
+    fill: none;
+    stroke: $red;
+    position: absolute;
+    margin: 1rem 1rem auto;
+    stroke-width: 2px;
+    cursor: pointer;
+    width: 15%;
+    right: 0;
+    top: 0;
+  }
+
+  &--media {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title-block {
+    padding: 1rem;
+    background-color: $red;
+    min-width: 0;
+
+    &--title {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  @include responsive(mobile-large) {
+    width: 90vw;
+  }
+}
+
+.active {
+  fill: $red;
+}
